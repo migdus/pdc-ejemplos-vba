@@ -1,4 +1,4 @@
-'Autor: Miguel Dussán
+' Autor: Miguel Dussán
 
 ' Este programa suma dos números
 
