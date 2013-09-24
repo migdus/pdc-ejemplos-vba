@@ -32,28 +32,28 @@ Do While cont_capturados < 270
 
     ' solicitud de dato a usuario
         captura = Val(InputBox("Escriba un número"))
-	    
-	        ' Si el número capturado es par
-		    If captura Mod 2 = 0 Then
-		        
-			        ' Acumula el valor de números pares
-				        acum_pares = acum_pares + captura
-					        
-						        'Cuenta cuántos números de los capturados son pares
-							        ' Esto es indispensable para calcular el promedio al final
-								        cont_pares = cont_pares + 1
-									    Else
-									            ' Si el número capturado es impar, acumula el valor de números impares
-										            acum_impares = acum_impares + captura
-											        End If
 
-												    cont_capturados = cont_capturados + 1 ' Incrementa variable de control de ciclo
-												    Loop ' Finaliza ciclo mientras
+' Si el número capturado es par
+If captura Mod 2 = 0 Then
 
-												    ' Imprimir resultados
-												    ' Muestra el promedio como: acum_pares / cont_pares
-												    ' La palabra vbNewLine agrega una nueva línea en el texto, de esta forma el resultado sale en dos renglones
+' Acumula el valor de números pares
+        acum_pares = acum_pares + captura
 
-												    MsgBox ("Promedio de números pares: " & acum_pares / cont_pares & vbNewLine & " Suma de impares: " & acum_impares)
+'Cuenta cuántos números de los capturados son pares
+        ' Esto es indispensable para calcular el promedio al final
+cont_pares = cont_pares + 1
+    Else
+            ' Si el número capturado es impar, acumula el valor de números impares
+acum_impares = acum_impares + captura
+    End If
 
-												    End Sub
+cont_capturados = cont_capturados + 1 ' Incrementa variable de control de ciclo
+Loop ' Finaliza ciclo mientras
+
+' Imprimir resultados
+' Muestra el promedio como: acum_pares / cont_pares
+' La palabra vbNewLine agrega una nueva línea en el texto, de esta forma el resultado sale en dos renglones
+
+MsgBox ("Promedio de números pares: " & acum_pares / cont_pares & vbNewLine & " Suma de impares: " & acum_impares)
+
+End Sub
