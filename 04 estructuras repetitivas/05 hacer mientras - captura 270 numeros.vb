@@ -1,4 +1,4 @@
-utor: Miguel Dussán
+' Autor: Miguel Dussán
 
 ' Escriba un programa que para 270 números ingresados, calcule
 ' el promedio de los números pares y la suma de los números impares
