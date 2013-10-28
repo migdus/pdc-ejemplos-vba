@@ -20,20 +20,19 @@ Sub main()
     'Definición de matriz
     'Se utilizan los valores del número de filas y de columnas capturados anteriormente para
     'declarar la matriz de forma dinámica.
-    'Al valor de número de filas y columnas se les resta uno, pues los índices inician en cero.
     
-    ReDim m(num_filas - 1, num_columnas - 1)
+    ReDim m(num_filas, num_columnas)
 
     ' Ciclo para capturar los valores de la matriz
-    For i = 0 To num_filas - 1 ' Controla la posición de la fila
-        For j = 0 To num_columnas - 1 ' Controla la posición de la columna
+    For i = 1 To num_filas ' Controla la posición de la fila
+        For j = 1 To num_columnas ' Controla la posición de la columna
             m(i, j) = Val(InputBox("Escriba un valor para la posición " + CStr(i) + "," + CStr(j)))
         Next
     Next
 
     ' Ciclo para recorrer la matriz y encontrar el número mayor
-     For i = 0 To num_filas - 1 ' Controla la posición de la fila
-        For j = 0 To num_columnas - 1 ' Controla la posición de la columna
+     For i = 1 To num_filas ' Controla la posición de la fila
+        For j = 1 To num_columnas ' Controla la posición de la columna
             
             ' Determina si se ha inicializado la variable mayor con el primer número de
             ' la matriz. Solo se hace una vez.
